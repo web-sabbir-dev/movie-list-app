@@ -1,0 +1,24 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.active{
+  color:rgb(74, 222, 128, var(--tw-text-opacity));
+}
+body{
+  background-color: #233554;
+}
+
+.card-wrap {
+  @apply px-4 flex justify-center flex-wrap gap-5;
+  flex: 1 1 180px; 
+}
+.card {
+  @apply max-w-52 overflow-hidden bg-slate-900 rounded-lg cursor-pointer duration-300 transition-transform;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
